@@ -10,6 +10,7 @@ import {
   MapPin,
   Send,
 } from "lucide-react";
+import Magnetic from "./Magnetic";
 
 const AnimatedLink = ({ href, children }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -82,11 +83,27 @@ const Footer = () => {
               Your trusted destination for quality products and exceptional
               service.
             </p>
-            <div className="flex space-x-4">
-              <SocialIcon Icon={Instagram} href="#" />
-              <SocialIcon Icon={Twitter} href="#" />
-              <SocialIcon Icon={Facebook} href="#" />
-              <SocialIcon Icon={Linkedin} href="#" />
+            <div className="flex space-x-8">
+              <Magnetic>
+                <div className="">
+                  <Instagram className="w-10 h-10 text-gray-400 group-hover:text-blue-500 transition-colors duration-300" />
+                </div>
+              </Magnetic>
+              <Magnetic>
+                <div className="">
+                  <Twitter className="w-10 h-10 text-gray-400 group-hover:text-blue-500 transition-colors duration-300" />
+                </div>
+              </Magnetic>
+              <Magnetic>
+                <div className="">
+                  <Facebook className="w-10 h-10 text-gray-400 group-hover:text-blue-500 transition-colors duration-300" />
+                </div>
+              </Magnetic>
+              <Magnetic>
+                <div className="">
+                  <Linkedin className="w-10 h-10 text-gray-400 group-hover:text-blue-500 transition-colors duration-300" />
+                </div>
+              </Magnetic>
             </div>
           </div>
 
