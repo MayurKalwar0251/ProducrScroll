@@ -173,7 +173,7 @@ const ProjectSection = () => {
         {leftSecondImages.map((img, index) => (
           <div
             key={index}
-            className="my-[300px] p-2 rounded-xl bg-white w-max"
+            className="my-[100px] p-2 rounded-xl bg-white w-max"
             ref={(el) => (leftSecondImagesRef.current[index] = el)}
           >
             <img src={img.img} className="w-[300px] h-[400px] object-cover" />
@@ -186,7 +186,7 @@ const ProjectSection = () => {
         {rightSecondImages.map((img, index) => (
           <div
             key={index}
-            className="my-[300px] p-2 rounded-xl bg-white w-max"
+            className="my-[100px] p-2 rounded-xl bg-white w-max"
             ref={(el) => (rightSecondImagesRef.current[index] = el)}
           >
             <img src={img.img} className="w-[300px] h-[400px] object-cover" />
